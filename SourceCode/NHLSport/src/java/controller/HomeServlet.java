@@ -59,7 +59,7 @@ public class HomeServlet extends HttpServlet {
     private void getViewHome(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException{
         PrintWriter out = response.getWriter();
-        List<Products> listProd =  productFacade.findAll();
+        List<Products> listProd =  productFacade.findByStatus(true);
         request.setAttribute("listProd", listProd);
         
         dispatcher = request.getRequestDispatcher("/index.jsp");

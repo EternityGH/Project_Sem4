@@ -29,492 +29,492 @@
         <link rel="stylesheet" type="text/css" href="${context}/assets/fonts/Glyphicons/style.css">
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/0644aaed0c.js" crossorigin="anonymous"></script>
-        
+
         <style>
-        .cart-page {
-            padding: 80px 0;
-        }
+            .cart-page {
+                padding: 80px 0;
+            }
 
-        .cart-page .page-title-inner {
-            position: relative;
-            padding: 20px 0;
-            min-height: 60px;
-        }
+            .cart-page .page-title-inner {
+                position: relative;
+                padding: 20px 0;
+                min-height: 60px;
+            }
 
-        .cart-page .page-title-inner .checkout-breadcrumbs {
-            padding: 15px 0;
-        }
+            .cart-page .page-title-inner .checkout-breadcrumbs {
+                padding: 15px 0;
+            }
 
-        .cart-page .page-title-inner .uppercase {
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
+            .cart-page .page-title-inner .uppercase {
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs a:first-of-type {
-            margin-left: 0;
-        }
+            .cart-page .page-title-inner .breadcrumbs a:first-of-type {
+                margin-left: 0;
+            }
 
-        .cart-page .page-title-inner .checkout-breadcrumbs a {
-            color: #ccc;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            -ms-flex-align: center;
-            align-items: center;
-            text-decoration: none;
-            font-family: "Poppins";
-            letter-spacing: 0.6px;
-            font-size: 26px;
-            transition: 0.3s all;
-            font-weight: 400;
-        }
+            .cart-page .page-title-inner .checkout-breadcrumbs a {
+                color: #ccc;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -ms-flex-align: center;
+                align-items: center;
+                text-decoration: none;
+                font-family: "Poppins";
+                letter-spacing: 0.6px;
+                font-size: 26px;
+                transition: 0.3s all;
+                font-weight: 400;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs .divider {
-            margin: 0 .2em;
-            opacity: .35;
-            font-weight: 300;
-        }
+            .cart-page .page-title-inner .breadcrumbs .divider {
+                margin: 0 .2em;
+                opacity: .35;
+                font-weight: 300;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs .divider i {
-            vertical-align: bottom;
-        }
+            .cart-page .page-title-inner .breadcrumbs .divider i {
+                vertical-align: bottom;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs a.current, .cart-page .page-title-inner .breadcrumbs a:hover {
-            color: #446084;
-        }
+            .cart-page .page-title-inner .breadcrumbs a.current, .cart-page .page-title-inner .breadcrumbs a:hover {
+                color: #446084;
+            }
 
-        .cart-page .page-title-inner .no-click {
-            pointer-events: none;
-        }
+            .cart-page .page-title-inner .no-click {
+                pointer-events: none;
+            }
 
-        .cart-page table {
-            width: 100%;
-            margin-bottom: 1em;
-            border-color: #ececec;
-            border-spacing: 0;
-        }
+            .cart-page table {
+                width: 100%;
+                margin-bottom: 1em;
+                border-color: #ececec;
+                border-spacing: 0;
+            }
 
-        .cart-page th {
-            line-height: 1.05;
-            color: #777;
-            letter-spacing: .05em;
-            text-transform: uppercase;
-            padding: 1em .5em;
-            text-align: left;
-            border-bottom: 1px solid #ececec;
-            border-width: 3px;
-            font-size: .9em;
-            font-family: "Poppins";
-            font-weight: 600;
-        }
+            .cart-page th {
+                line-height: 1.05;
+                color: #777;
+                letter-spacing: .05em;
+                text-transform: uppercase;
+                padding: 1em .5em;
+                text-align: left;
+                border-bottom: 1px solid #ececec;
+                border-width: 3px;
+                font-size: .9em;
+                font-family: "Poppins";
+                font-weight: 600;
+            }
 
-        .cart-page td {
-            padding: 15px .5em;
-            text-align: left;
-            border-bottom: 1px solid #ececec;
-            line-height: 1.3;
-            font-size: .9em;
-        }
+            .cart-page td {
+                padding: 15px .5em;
+                text-align: left;
+                border-bottom: 1px solid #ececec;
+                line-height: 1.3;
+                font-size: .9em;
+            }
 
-        .cart-table .cart-item td.product-remove {
-            width: 20px;
-            padding: 0;
-        }
+            .cart-table .cart-item td.product-remove {
+                width: 20px;
+                padding: 0;
+            }
 
-        .cart-table .cart-item td.product-remove a.remove {
-            display: block;
-            width: 24px;
-            height: 24px;
-            font-size: 15px !important;
-            line-height: 19px !important;
-            border-radius: 100%;
-            color: #ccc;
-            font-weight: bold;
-            text-align: center;
-            border: 2px solid currentColor;
-        }
+            .cart-table .cart-item td.product-remove a.remove {
+                display: block;
+                width: 24px;
+                height: 24px;
+                font-size: 15px !important;
+                line-height: 19px !important;
+                border-radius: 100%;
+                color: #ccc;
+                font-weight: bold;
+                text-align: center;
+                border: 2px solid currentColor;
+            }
 
-        .cart-table .cart-item td.product-thumbnail {
-            min-width: 60px;
-            max-width: 90px;
-            width: 90px;
-        }
+            .cart-table .cart-item td.product-thumbnail {
+                min-width: 60px;
+                max-width: 90px;
+                width: 90px;
+            }
 
-        .cart-table .cart-item td.product-thumbnail img {
-            max-width: 100%;
-            height: auto;
-            display: inline-block;
-            vertical-align: middle;
-        }
+            .cart-table .cart-item td.product-thumbnail img {
+                max-width: 100%;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
+            }
 
-        .cart-page td.product-name {
-            word-break: break-word;
-            text-overflow: ellipsis;
-        }
+            .cart-page td.product-name {
+                word-break: break-word;
+                text-overflow: ellipsis;
+            }
 
-        .cart-table .cart-item td.product-name a {
-            color: #334862;
-            text-decoration: none;
-        }
+            .cart-table .cart-item td.product-name a {
+                color: #334862;
+                text-decoration: none;
+            }
 
-        .cart-table .cart-item span.amount {
-            white-space: nowrap;
-            color: #111;
-            font-weight: bold;
-        }
+            .cart-table .cart-item span.amount {
+                white-space: nowrap;
+                color: #111;
+                font-weight: bold;
+            }
 
-        .cart-table .actions {
-            border: 0;
-            padding: 15px 0 10px;
-        }
+            .cart-table .actions {
+                border: 0;
+                padding: 15px 0 10px;
+            }
 
-        .cart-table .button.is-outline {
-            display: inline-block;
-            margin-bottom: 1em;
-            line-height: 2.19em;
-            color: #446084;
-            border: 2px solid currentColor;
-            background-color: transparent;
-            min-height: 2.5em;
-            padding: 0 1.2em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-            vertical-align: middle;
-            border-radius: 0;
-            margin-top: 0;
-            margin-right: 1em;
-            text-shadow: none;
-            text-transform: uppercase;
-            font-size: .97em;
-            letter-spacing: .03em;
-            cursor: pointer;
-            font-weight: 600;
-            text-align: center;
-            text-decoration: none;
-            font-family: "Poppins";
-            border-radius: 2px;
-        }
+            .cart-table .button.is-outline {
+                display: inline-block;
+                margin-bottom: 1em;
+                line-height: 2.19em;
+                color: #446084;
+                border: 2px solid currentColor;
+                background-color: transparent;
+                min-height: 2.5em;
+                padding: 0 1.2em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+                vertical-align: middle;
+                border-radius: 0;
+                margin-top: 0;
+                margin-right: 1em;
+                text-shadow: none;
+                text-transform: uppercase;
+                font-size: .97em;
+                letter-spacing: .03em;
+                cursor: pointer;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                font-family: "Poppins";
+                border-radius: 2px;
+            }
 
-        .cart-table a.button-continue-shopping:hover {
-            color: #fff;
-            background-color: #446084;
-            border-color: #446084;
-        }
+            .cart-table a.button-continue-shopping:hover {
+                color: #fff;
+                background-color: #446084;
+                border-color: #446084;
+            }
 
-        .primary {
-            background-color: #446084;
-        }
+            .primary {
+                background-color: #446084;
+            }
 
-        .cart-table button.button {
-            position: relative;
-            display: inline-block;
-            text-transform: uppercase;
-            font-size: .97em;
-            letter-spacing: .03em;
-            cursor: pointer;
-            font-weight: 600;
-            text-align: center;
-            text-decoration: none;
-            border: 1px solid transparent;
-            vertical-align: middle;
-            border-radius: 0;
-            margin-right: 1em;
-            text-shadow: none;
-            line-height: 2.4em;
-            min-height: 2.5em;
-            padding: 0 1.2em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-            color: #fff;
-            border-color: rgba(0,0,0,0.05);
-            font-family: "Poppins";
-            border-radius: 2px;
-        }
+            .cart-table button.button {
+                position: relative;
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: .97em;
+                letter-spacing: .03em;
+                cursor: pointer;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                border: 1px solid transparent;
+                vertical-align: middle;
+                border-radius: 0;
+                margin-right: 1em;
+                text-shadow: none;
+                line-height: 2.4em;
+                min-height: 2.5em;
+                padding: 0 1.2em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+                color: #fff;
+                border-color: rgba(0,0,0,0.05);
+                font-family: "Poppins";
+                border-radius: 2px;
+            }
 
-        .cart-table button.button:hover {
-            outline: none;
-            opacity: 1;
-            color: #fff;
-            box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
-        }
+            .cart-table button.button:hover {
+                outline: none;
+                opacity: 1;
+                color: #fff;
+                box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+            }
 
-        
-        .cart-table button.button[disabled] {
-            opacity: .6;
-        }
 
-        .cart-table .cart-item td.product-quantity .quantity {
-            opacity: 1;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            margin: 0;
-            white-space: nowrap;
-            vertical-align: top;
-        }
+            .cart-table button.button[disabled] {
+                opacity: .6;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input {
-            padding-left: 0;
-            padding-right: 0;
-            display: inline-block;
-            vertical-align: top;
-            margin: 0;
-        }
+            .cart-table .cart-item td.product-quantity .quantity {
+                opacity: 1;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                margin: 0;
+                white-space: nowrap;
+                vertical-align: top;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input[type='button'].is-form {
-            overflow: hidden;
-            position: relative;
-            background-color: #f9f9f9;
-            text-shadow: 1px 1px 1px #fff;
-            color: #666;
-            border: 1px solid #ddd;
-            text-transform: none;
-            font-weight: normal;
-        }
+            .cart-table .cart-item td.product-quantity .quantity input {
+                padding-left: 0;
+                padding-right: 0;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input[type='button'].is-form:focus {
-            outline: none;
-        }
+            .cart-table .cart-item td.product-quantity .quantity input[type='button'].is-form {
+                overflow: hidden;
+                position: relative;
+                background-color: #f9f9f9;
+                text-shadow: 1px 1px 1px #fff;
+                color: #666;
+                border: 1px solid #ddd;
+                text-transform: none;
+                font-weight: normal;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity .button {
-            line-height: 2.4em;
-            min-height: 2.5em;
-            padding: 0 1.2em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-            font-size: .97em;
-            letter-spacing: .03em;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-        }
+            .cart-table .cart-item td.product-quantity .quantity input[type='button'].is-form:focus {
+                outline: none;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity .minus, .cart-table .cart-item td.product-quantity .quantity .plus {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
+            .cart-table .cart-item td.product-quantity .quantity .button {
+                line-height: 2.4em;
+                min-height: 2.5em;
+                padding: 0 1.2em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+                font-size: .97em;
+                letter-spacing: .03em;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity .minus {
-            border-right: 0 !important;
-            border-top-right-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-        }
+            .cart-table .cart-item td.product-quantity .quantity .minus, .cart-table .cart-item td.product-quantity .quantity .plus {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity .plus {
-            border-left: 0 !important;
-            border-top-left-radius: 0 !important;
-            border-bottom-left-radius: 0 !important;
-        }
+            .cart-table .cart-item td.product-quantity .quantity .minus {
+                border-right: 0 !important;
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input[type="number"] {
-            max-width: 2.5em;
-            width: 2.5em;
-            text-align: center;
-            border-radius: 0 !important;
-            -webkit-appearance: textfield;
-            -moz-appearance: textfield;
-            appearance: textfield;
-            font-size: 1em;
-            box-sizing: border-box;
-            border: 1px solid #ddd;
-            padding: 0 .75em;
-            height: 2.507em;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-            background-color: #fff;
-            color: #333;
-            transition: all .3s;
-        }
+            .cart-table .cart-item td.product-quantity .quantity .plus {
+                border-left: 0 !important;
+                border-top-left-radius: 0 !important;
+                border-bottom-left-radius: 0 !important;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input[type="number"]:hover{
-            box-shadow: inset 0 -1.8em 1em 0 rgba(0,0,0,0);
-        }
+            .cart-table .cart-item td.product-quantity .quantity input[type="number"] {
+                max-width: 2.5em;
+                width: 2.5em;
+                text-align: center;
+                border-radius: 0 !important;
+                -webkit-appearance: textfield;
+                -moz-appearance: textfield;
+                appearance: textfield;
+                font-size: 1em;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+                padding: 0 .75em;
+                height: 2.507em;
+                box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+                background-color: #fff;
+                color: #333;
+                transition: all .3s;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input[type="number"]:focus {
-            outline: none;
-        }
+            .cart-table .cart-item td.product-quantity .quantity input[type="number"]:hover{
+                box-shadow: inset 0 -1.8em 1em 0 rgba(0,0,0,0);
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity input[type='number']::-webkit-outer-spin-button,
-        .cart-table .cart-item td.product-quantity .quantity input[type='number']::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-        }
+            .cart-table .cart-item td.product-quantity .quantity input[type="number"]:focus {
+                outline: none;
+            }
 
-        .cart-table .cart-item td.product-quantity .quantity .button.is-form:hover {
-            color: #000;
-            background-color: #f1f1f1;
-        }
+            .cart-table .cart-item td.product-quantity .quantity input[type='number']::-webkit-outer-spin-button,
+            .cart-table .cart-item td.product-quantity .quantity input[type='number']::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
 
-        .cart-totals tbody th {
-            font-family: 'Poppins';
-            font-size: .9em;
-            text-transform: inherit;
-            letter-spacing: 0;
-            font-weight: normal;
-        }
+            .cart-table .cart-item td.product-quantity .quantity .button.is-form:hover {
+                color: #000;
+                background-color: #f1f1f1;
+            }
 
-        .cart-totals tbody tr td, .cart-table .cart-item tr td:last-of-type {
-            text-align: right;
-            padding-right: 0;
-            border-width: 3px;
-        }
+            .cart-totals tbody th {
+                font-family: 'Poppins';
+                font-size: .9em;
+                text-transform: inherit;
+                letter-spacing: 0;
+                font-weight: normal;
+            }
 
-        .cart-page .cart-totals .button {
-            min-width: 100%;
-            margin-right: 0;
-            display: block;
-        }
+            .cart-totals tbody tr td, .cart-table .cart-item tr td:last-of-type {
+                text-align: right;
+                padding-right: 0;
+                border-width: 3px;
+            }
 
-        .cart-page .button.alt {
-            background-color: #d26e4b;
-        }
+            .cart-page .cart-totals .button {
+                min-width: 100%;
+                margin-right: 0;
+                display: block;
+            }
 
-        .cart-page .cart-totals .button {
-            position: relative;
-            text-transform: uppercase;
-            font-size: .97em;
-            letter-spacing: .03em;
-            cursor: pointer;
-            font-weight: 600;
-            text-align: center;
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid transparent;
-            vertical-align: middle;
-            border-radius: 3px;
-            margin-top: 0;
-            text-shadow: none;
-            line-height: 2.4em;
-            min-height: 2.5em;
-            padding: 0 1.2em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box
-        }
+            .cart-page .button.alt {
+                background-color: #d26e4b;
+            }
 
-        .cart-page .cart-totals .button:hover {
-            outline: none;
-            opacity: 1;
-            color: #fff;
-            box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
-        }
+            .cart-page .cart-totals .button {
+                position: relative;
+                text-transform: uppercase;
+                font-size: .97em;
+                letter-spacing: .03em;
+                cursor: pointer;
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                border: 1px solid transparent;
+                vertical-align: middle;
+                border-radius: 3px;
+                margin-top: 0;
+                text-shadow: none;
+                line-height: 2.4em;
+                min-height: 2.5em;
+                padding: 0 1.2em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box
+            }
 
-        .cart-page .widget-title {
-            border-bottom: 3px solid #ececec;
-            font-size: .95em;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            font-family: "Poppins";
-            font-weight: 600;
-        }
+            .cart-page .cart-totals .button:hover {
+                outline: none;
+                opacity: 1;
+                color: #fff;
+                box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+            }
 
-        .widget-title i {
-            opacity: .35;
-            margin-right: 4px;
-        }
+            .cart-page .widget-title {
+                border-bottom: 3px solid #ececec;
+                font-size: .95em;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                font-family: "Poppins";
+                font-weight: 600;
+            }
 
-        .cart-page input {
-            box-sizing: border-box;
-            border: 1px solid #ddd;
-            padding: 0 .75em;
-            height: 2.507em;
-            font-size: .97em;
-            border-radius: 3px;
-            max-width: 100%;
-            width: 100%;
-            vertical-align: middle;
-            background-color: #fff;
-            color: #333;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-            transition: color .3s, border .3s, background .3s, opacity .3s;
-            margin-bottom: 1em;
-            border-radius: 3px;
-        }
+            .widget-title i {
+                opacity: .35;
+                margin-right: 4px;
+            }
 
-        .cart-page input:focus {
-            outline: none;
-        }
+            .cart-page input {
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+                padding: 0 .75em;
+                height: 2.507em;
+                font-size: .97em;
+                border-radius: 3px;
+                max-width: 100%;
+                width: 100%;
+                vertical-align: middle;
+                background-color: #fff;
+                color: #333;
+                box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+                transition: color .3s, border .3s, background .3s, opacity .3s;
+                margin-bottom: 1em;
+                border-radius: 3px;
+            }
 
-        .cart-page input[type="submit"] {
-            overflow: hidden;
-            position: relative;
-            background-color: #f9f9f9;
-            text-shadow: 1px 1px 1px #fff;
-            color: #666;
-            border: 1px solid #ddd;
-            text-transform: none;
-            font-weight: normal;
-            cursor: pointer;
-            border-radius: 3px;
-            transition: 0.3s a;;;
-        }
+            .cart-page input:focus {
+                outline: none;
+            }
 
-        .cart-page input[type="submit"]:hover {
-            box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
-        }
-        
-        .no-item {
-            text-align: center;
-        }
-        
-        .no-item p {
-            margin-bottom: 1.3em;
-            font-family: "Poppins";
-            font-size: 16px;
-            letter-spacing: 1px;
-        }
-        
-        .no-item p .button {
-            position: relative;
-            display: inline-block;
-            text-transform: uppercase;
-            color: #fff;
-            font-size: .97em!important;
-            border-radius: 3px;
-            letter-spacing: .03em;
-            cursor: pointer;
-            font-weight: 600;
-            text-align: center;
-            text-decoration: none;
-            border: 1px solid transparent;
-            vertical-align: middle;
-            margin-top: 0;
-            text-shadow: none;
-            line-height: 2.4em;
-            min-height: 2.5em;
-            padding: 0.3em 1.5em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-        }
-        
-        .no-item p .button:hover {
-            outline: none;
-            opacity: 1;
-            color: #fff;
-            box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
-        }
-        
-        .voucher-used tr th, .voucher-used tr td {
-            font-family: 'Poppins';
-            font-size: .9em;
-            text-transform: inherit;
-            letter-spacing: 0;
-            font-weight: normal;
-            border-width: 3px;
-        }
-    </style>
+            .cart-page input[type="submit"] {
+                overflow: hidden;
+                position: relative;
+                background-color: #f9f9f9;
+                text-shadow: 1px 1px 1px #fff;
+                color: #666;
+                border: 1px solid #ddd;
+                text-transform: none;
+                font-weight: normal;
+                cursor: pointer;
+                border-radius: 3px;
+                transition: 0.3s a;;;
+            }
+
+            .cart-page input[type="submit"]:hover {
+                box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+            }
+
+            .no-item {
+                text-align: center;
+            }
+
+            .no-item p {
+                margin-bottom: 1.3em;
+                font-family: "Poppins";
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            .no-item p .button {
+                position: relative;
+                display: inline-block;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: .97em!important;
+                border-radius: 3px;
+                letter-spacing: .03em;
+                cursor: pointer;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                border: 1px solid transparent;
+                vertical-align: middle;
+                margin-top: 0;
+                text-shadow: none;
+                line-height: 2.4em;
+                min-height: 2.5em;
+                padding: 0.3em 1.5em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+            }
+
+            .no-item p .button:hover {
+                outline: none;
+                opacity: 1;
+                color: #fff;
+                box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+            }
+
+            .voucher-used tr th, .voucher-used tr td {
+                font-family: 'Poppins';
+                font-size: .9em;
+                text-transform: inherit;
+                letter-spacing: 0;
+                font-weight: normal;
+                border-width: 3px;
+            }
+        </style>
     </head>
     <body>
         <jsp:include page="../layout/navigation.jsp" />
-        
-        
+
+
 
         <div class="cart-page">
             <div class="checkout-page-title page-title">
@@ -558,38 +558,38 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                                <c:forEach var="item" items="${order.ordersDetailCollection}">
-                                                    <tr class="cart-item">
-                                                        <td class="product-remove">
-                                                            <a href="${context}/Cart/Delete?id=${item.productId.productId}" class="remove">×</a>
-                                                        </td>
-                                                        <td class="product-thumbnail">
-                                                            <a href="#">
-                                                                <c:set var="url" value="${fn:split(item.productId.imageUrl, ';')}"/>
-                                                                <img src="${context}/assets/images/products/${url[0]}">
-                                                            </a>
-                                                        </td>
-                                                        <td class="product-name">
-                                                            <a href="#">
-                                                               ${item.productId.productName}
-                                                            </a>
-                                                        </td>   
-                                                        <td class="product-price">
-                                                            <span class="amount"><fmt:formatNumber value="${item.productId.price}" maxFractionDigits="2"/><span>$</span></span>						
-                                                        </td>
-                                                        <td class="product-quantity">
-                                                            <div class="quantity">
-                                                                <input type="text" class="input-hidden-price" value="<fmt:formatNumber value="${item.productId.price}" maxFractionDigits="2"/>" hidden>
-                                                                <input type="button" value="-" class="minus button is-form">
-                                                                <input type="number" data-id="${item.productId.productId}" class="input-text qty text" step="1" min="0" max="" name="quantity" value="${item.quantity}" size="4">
-                                                                <input type="button" value="+" class="plus button is-form">
-                                                            </div>
-                                                        </td>
-                                                        <td class="product-subtotal">
-                                                            <span class="amount subtotal ${item.productId.productId}"><fmt:formatNumber value="${item.productId.price * item.quantity}" maxFractionDigits="2"/><span>$</span></span>
-                                                        </td>
-                                                    </tr>
-                                                </c:forEach>
+                                            <c:forEach var="item" items="${order.ordersDetailCollection}">
+                                                <tr class="cart-item">
+                                                    <td class="product-remove">
+                                                        <a href="${context}/Cart/Delete?id=${item.productId.productId}" class="remove">×</a>
+                                                    </td>
+                                                    <td class="product-thumbnail">
+                                                        <a href="#">
+                                                            <c:set var="url" value="${fn:split(item.productId.imageUrl, ';')}"/>
+                                                            <img src="${context}/assets/images/products/${url[0]}">
+                                                        </a>
+                                                    </td>
+                                                    <td class="product-name">
+                                                        <a href="#">
+                                                            ${item.productId.productName}
+                                                        </a>
+                                                    </td>   
+                                                    <td class="product-price">
+                                                        <span class="amount"><fmt:formatNumber value="${item.productId.price}" maxFractionDigits="2"/><span>$</span></span>						
+                                                    </td>
+                                                    <td class="product-quantity">
+                                                        <div class="quantity">
+                                                            <input type="text" class="input-hidden-price" value="<fmt:formatNumber value="${item.productId.price}" maxFractionDigits="2"/>" hidden>
+                                                            <input type="button" value="-" class="minus button is-form">
+                                                            <input type="number" data-id="${item.productId.productId}" class="input-text qty text" step="1" min="0" max="" name="quantity" value="${item.quantity}" size="4">
+                                                            <input type="button" value="+" class="plus button is-form">
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-subtotal">
+                                                        <span class="amount subtotal ${item.productId.productId}"><fmt:formatNumber value="${item.productId.price * item.quantity}" maxFractionDigits="2"/><span>$</span></span>
+                                                    </td>
+                                                </tr>
+                                            </c:forEach>
 
                                             <tr>
                                                 <td colspan="6" class="actions clear">
@@ -652,7 +652,12 @@
                                                         <strong>
                                                             <span class="amount">
                                                                 <c:if test="${order.voucherId != null}">
-                                                                    <fmt:formatNumber value="${order.total - order.voucherId.discount}" maxFractionDigits="2"/><span>$</span>
+                                                                    <c:if test="${order.total - order.voucherId.discount < 0}">
+                                                                        <fmt:formatNumber value="0" maxFractionDigits="2"/><span>$</span>
+                                                                    </c:if>
+                                                                    <c:if test="${order.total - order.voucherId.discount > 0}">
+                                                                        <fmt:formatNumber value="${order.total - order.voucherId.discount}" maxFractionDigits="2"/><span>$</span>
+                                                                    </c:if>
                                                                 </c:if>
                                                                 <c:if test="${order.voucherId == null}">
                                                                     <fmt:formatNumber value="${order.total}" maxFractionDigits="2"/><span>$</span>
@@ -704,40 +709,40 @@
             <!-- End div.cart-container -->
         </div>
         <!-- End div.cart-page -->
-        
-        
+
+
         <jsp:include page="../layout/footer.jsp" />
-        
-        
+
+
         <script src="${context}/vendors/jquery/jquery-3.5.0.min.js"></script>
         <script src="${context}/vendors/popper/popper.min.js"></script>
         <script src="${context}/vendors/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
         <script src="${context}/assets/js/script.js"></script>
         <script>
-            $(document).ready(function(){
-                $('.plus').click(function(){
-                   var input = $(this).prev();
-                   var classAttr = input.attr('data-id');
-                   var a = parseInt(input.val()) + 1;
-                   input.val(a);
-                   var subtotal = a * parseInt($('.input-hidden-price').val()) ;
-                   $('.amount.subtotal.'+classAttr).text(subtotal+'$');
-                   $('.update-cart').prop("disabled", false);
+            $(document).ready(function() {
+                $('.plus').click(function() {
+                    var input = $(this).prev();
+                    var classAttr = input.attr('data-id');
+                    var a = parseInt(input.val()) + 1;
+                    input.val(a);
+                    var subtotal = a * parseInt($('.input-hidden-price').val());
+                    $('.amount.subtotal.' + classAttr).text(subtotal + '$');
+                    $('.update-cart').prop("disabled", false);
                 });
-                $('.minus').click(function(){
-                   var input = $(this).next();
-                   if(parseInt(input.val()) == 1){
+                $('.minus').click(function() {
+                    var input = $(this).next();
+                    if (parseInt(input.val()) == 1) {
                         alert("Minimun quantity is 1");
-                   }
-                   else {
+                    }
+                    else {
                         var a = parseInt(input.val()) - 1;
                         var classAttr = input.attr('data-id');
                         input.val(a);
-                        var subtotal = a * parseInt($('.input-hidden-price').val()) ;
-                        $('.amount.subtotal.'+classAttr).text(subtotal+'$'); 
+                        var subtotal = a * parseInt($('.input-hidden-price').val());
+                        $('.amount.subtotal.' + classAttr).text(subtotal + '$');
                         $('.update-cart').prop("disabled", false);
-                   }
-                   
+                    }
+
                 });
             });
         </script>

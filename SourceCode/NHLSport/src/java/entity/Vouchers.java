@@ -121,6 +121,13 @@ public class Vouchers implements Serializable {
         this.expirationDate = expirationDate;
     }
 
+    public Vouchers(String code, Integer discount, Date expirationDate, Boolean status) {
+        this.code = code;
+        this.discount = discount;
+        this.expirationDate = expirationDate;
+        this.status = status;
+    }
+    
     public Boolean getStatus() {
         return status;
     }

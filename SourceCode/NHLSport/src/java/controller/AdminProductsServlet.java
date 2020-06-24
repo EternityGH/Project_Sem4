@@ -41,6 +41,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  */
 @WebServlet(name = "AdminProductsServlet", urlPatterns = {"/Admin/Products/*"})
 public class AdminProductsServlet extends HttpServlet {
+
     @EJB
     private StoragesFacadeLocal storagesFacade;
 
@@ -179,12 +180,12 @@ public class AdminProductsServlet extends HttpServlet {
         }
         if (err == null) {
             Products newProd = new Products(productName, description, imgName, gender, price, status, brandsFacade.find(brandId), categoriesFacade.find(catId));
-        productFacade.create(newProd);
-        Storages storages = new Storages();
-        Products pro = productFacade.find(newProd.getProductId());
-        storages.setProductId(pro);
-        storages.setQuantity(0);
-        storagesFacade.create(storages);
+            productFacade.create(newProd);
+            Storages storages = new Storages();
+            Products pro = productFacade.find(newProd.getProductId());
+            storages.setProductId(pro);
+            storages.setQuantity(0);
+            storagesFacade.create(storages);
 
             //Send Redirect
             response.sendRedirect("List");

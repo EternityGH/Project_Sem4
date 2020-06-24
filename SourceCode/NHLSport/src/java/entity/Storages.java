@@ -10,6 +10,8 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
@@ -36,7 +38,7 @@ public class Storages implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @NotNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "StorageId", nullable = false)
     private Integer storageId;
     @Column(name = "Quantity")
@@ -48,6 +50,11 @@ public class Storages implements Serializable {
     public Storages() {
     }
 
+    public Storages(Integer quantity, Products productId) {
+        this.quantity = quantity;
+        this.productId = productId;
+    }
+    
     public Storages(Integer storageId) {
         this.storageId = storageId;
     }

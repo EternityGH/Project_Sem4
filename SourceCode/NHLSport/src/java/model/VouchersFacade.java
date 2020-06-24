@@ -77,5 +77,11 @@ public class VouchersFacade extends AbstractFacade<Vouchers> implements Vouchers
             return false;
         }
     }
-    
+    @Override
+    public List<Vouchers> findByDateReport(String from, String to) {
+        Query q = em.createQuery("SELECT v FROM Vouchers v WHERE v.expirationDate BETWEEN :from AND :to");
+        q.setParameter("from", from);
+        q.setParameter("to", to);
+        return q.getResultList();
+    }
 }

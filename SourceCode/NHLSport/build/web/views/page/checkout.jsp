@@ -31,259 +31,259 @@
         <script src="https://kit.fontawesome.com/0644aaed0c.js" crossorigin="anonymous"></script>
         <style>
             .cart-page {
-            padding: 80px 0;
-        }
+                padding: 80px 0;
+            }
 
-        .cart-page .page-title-inner {
-            position: relative;
-            padding: 20px 0;
-            min-height: 60px;
-        }
+            .cart-page .page-title-inner {
+                position: relative;
+                padding: 20px 0;
+                min-height: 60px;
+            }
 
-        .cart-page .page-title-inner .checkout-breadcrumbs {
-            padding: 15px 0;
-        }
+            .cart-page .page-title-inner .checkout-breadcrumbs {
+                padding: 15px 0;
+            }
 
-        .cart-page .page-title-inner .uppercase {
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
+            .cart-page .page-title-inner .uppercase {
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs a:first-of-type {
-            margin-left: 0;
-        }
+            .cart-page .page-title-inner .breadcrumbs a:first-of-type {
+                margin-left: 0;
+            }
 
-        .cart-page .page-title-inner .checkout-breadcrumbs a {
-            color: #ccc;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            -ms-flex-align: center;
-            align-items: center;
-            text-decoration: none;
-            font-family: "Poppins";
-            letter-spacing: 0.6px;
-            font-size: 26px;
-            transition: 0.3s all;
-            font-weight: 400;
-        }
+            .cart-page .page-title-inner .checkout-breadcrumbs a {
+                color: #ccc;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -ms-flex-align: center;
+                align-items: center;
+                text-decoration: none;
+                font-family: "Poppins";
+                letter-spacing: 0.6px;
+                font-size: 26px;
+                transition: 0.3s all;
+                font-weight: 400;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs .divider {
-            margin: 0 .2em;
-            opacity: .35;
-            font-weight: 300;
-        }
+            .cart-page .page-title-inner .breadcrumbs .divider {
+                margin: 0 .2em;
+                opacity: .35;
+                font-weight: 300;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs .divider i {
-            vertical-align: bottom;
-        }
+            .cart-page .page-title-inner .breadcrumbs .divider i {
+                vertical-align: bottom;
+            }
 
-        .cart-page .page-title-inner .breadcrumbs a.current, .cart-page .page-title-inner .breadcrumbs a:hover {
-            color: #446084;
-        }
+            .cart-page .page-title-inner .breadcrumbs a.current, .cart-page .page-title-inner .breadcrumbs a:hover {
+                color: #446084;
+            }
 
-        .cart-page .page-title-inner .no-click {
-            pointer-events: none;
-        }
-        
-        .cart-page h3 {
-            font-size: 1.1em;
-            overflow: hidden;
-            padding-top: 10px;
-            font-weight: 600;
-            color: #555;
-            text-transform: uppercase;
-            font-family: 'Poppins';
-            display: inline-block;
-            border-bottom: 3px solid #ececec;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            width: auto;
-        }
-        
-        .cart-page .container .col-md-7 label {
-            font-size: .9em;
-            margin-bottom: 0.4em;
-            color: #555;
-            font-weight: 600;
-            font-family: 'Poppins';
-        }
-        .cart-page .container .col-md-7 input, .cart-page .container .col-md-7 textarea  {
-            display: block;
-            box-sizing: border-box;
-            border: 1px solid #ddd;
-            padding: 0 .75em;
-            height: 2.507em;
-            font-size: .97em;
-            border-radius: 0;
-            max-width: 100%;
-            width: 100%;
-            vertical-align: middle;
-            background-color: #fff;
-            color: #333;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-            transition: color .3s, border .3s, background .3s, opacity;
-            font-family: 'Poppins';
-        }
-        
-        .cart-page .container .col-md-7 textarea {
-            padding-top: 0.7em;
-            min-height: 120px;
-        }
-        
-        .cart-page .container .col-md-7 input:hover, .cart-page .container .col-md-7 textarea:hover, select:hover {
-            box-shadow: inset 0 -1.8em 1em 0 rgba(0,0,0,0);
-        }
-        
-        .cart-page .container .col-md-7 input:focus, .cart-page .container .col-md-7 textarea:focus {
-            box-shadow: 0 0 5px #ccc;
-            opacity: 1 !important;
-            outline: 0;
-            color: #333;
-            background-color: #fff;
-        }
-        
-        .cart-page .container .col-md-5 .order-review {
-            border: 2px solid #446084;
-            padding: 15px 30px 30px;
-        }
-        
-        .cart-page .container .col-md-5 .order-review table th {
-            padding: .5em 0;
-            border-bottom: 3px solid #ececec;
-            line-height: 1.05;
-            letter-spacing: .05em;
-            text-transform: uppercase;
-            color: #777;
-            font-size: .9em;
-            font-family: 'Poppins';
-        }
-        
-        .cart-page .container .col-md-5 .order-review table td {
-            padding: 1em 0;
-            border-bottom: 3px solid #ececec;
-            line-height: 1.05;
-            letter-spacing: .05em;
-            color: #777;
-            font-size: .9em;
-            font-family: 'Poppins';
-        }
-        
-        .amount {
-            white-space: nowrap;
-            color: #111;
-            font-weight: 600;
-        }
-        
-        .button {
-            position: relative;
-            display: inline-block;
-            background-color: transparent;
-            text-transform: uppercase;
-            font-size: .97em;
-            letter-spacing: .03em;
-            cursor: pointer;
-            font-weight: bolder;
-            text-align: center;
-            color: currentColor;
-            text-decoration: none;
-            border: 1px solid transparent;
-            vertical-align: middle;
-            border-radius: 0;
-            margin-top: 0;
-            margin-right: 1em;
-            text-shadow: none;
-            line-height: 2.4em;
-            min-height: 2.5em;
-            padding: 0 1.2em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-            font-family: "Poppins";
-        }
-        
-        .button.alt {
-            color: #fff;
-            background-color: #446084;
-            border-color: rgba(0,0,0,0.05);
-        }
-        
-        .payment p {
-            color: #777;
-            font-family: "Poppins";
-            font-size: .9em;
-            margin-bottom: .2em;
-        }
-        
-        .payment label {
-            color: #222;
-            font-weight: bold;
-            font-size: .9em;
-            padding: 0 0.5em;
-            margin-bottom: 0.5em;
-        }
-        
-        .cart-page .container ul li {
-            padding: 0.8em 0;
-            list-style: none;
-            margin: 0;
-            border-bottom: 1px solid #ececec;
-        }
-        
-        .cart-page .container .payment_box {
-            display: none;
-        }
-        .no-item {
-            text-align: center;
-        }
-        
-        .no-item p {
-            margin-bottom: 1.3em;
-            font-family: "Poppins";
-            font-size: 16px;
-            letter-spacing: 1px;
-        }
-        
-        .no-item p .button {
-            position: relative;
-            display: inline-block;
-            text-transform: uppercase;
-            color: #fff;
-            font-size: .97em!important;
-            border-radius: 3px;
-            letter-spacing: .03em;
-            cursor: pointer;
-            font-weight: 600;
-            text-align: center;
-            text-decoration: none;
-            border: 1px solid transparent;
-            vertical-align: middle;
-            margin-top: 0;
-            text-shadow: none;
-            line-height: 2.4em;
-            min-height: 2.5em;
-            padding: 0.3em 1.5em;
-            max-width: 100%;
-            transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-        }
-        
-        .no-item p .button:hover {
-            outline: none;
-            opacity: 1;
-            color: #fff;
-            box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
-        }
-        
-        .primary {
-            background-color: #446084;
-        }
+            .cart-page .page-title-inner .no-click {
+                pointer-events: none;
+            }
+
+            .cart-page h3 {
+                font-size: 1.1em;
+                overflow: hidden;
+                padding-top: 10px;
+                font-weight: 600;
+                color: #555;
+                text-transform: uppercase;
+                font-family: 'Poppins';
+                display: inline-block;
+                border-bottom: 3px solid #ececec;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                width: auto;
+            }
+
+            .cart-page .container .col-md-7 label {
+                font-size: .9em;
+                margin-bottom: 0.4em;
+                color: #555;
+                font-weight: 600;
+                font-family: 'Poppins';
+            }
+            .cart-page .container .col-md-7 input, .cart-page .container .col-md-7 textarea  {
+                display: block;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+                padding: 0 .75em;
+                height: 2.507em;
+                font-size: .97em;
+                border-radius: 0;
+                max-width: 100%;
+                width: 100%;
+                vertical-align: middle;
+                background-color: #fff;
+                color: #333;
+                box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+                transition: color .3s, border .3s, background .3s, opacity;
+                font-family: 'Poppins';
+            }
+
+            .cart-page .container .col-md-7 textarea {
+                padding-top: 0.7em;
+                min-height: 120px;
+            }
+
+            .cart-page .container .col-md-7 input:hover, .cart-page .container .col-md-7 textarea:hover, select:hover {
+                box-shadow: inset 0 -1.8em 1em 0 rgba(0,0,0,0);
+            }
+
+            .cart-page .container .col-md-7 input:focus, .cart-page .container .col-md-7 textarea:focus {
+                box-shadow: 0 0 5px #ccc;
+                opacity: 1 !important;
+                outline: 0;
+                color: #333;
+                background-color: #fff;
+            }
+
+            .cart-page .container .col-md-5 .order-review {
+                border: 2px solid #446084;
+                padding: 15px 30px 30px;
+            }
+
+            .cart-page .container .col-md-5 .order-review table th {
+                padding: .5em 0;
+                border-bottom: 3px solid #ececec;
+                line-height: 1.05;
+                letter-spacing: .05em;
+                text-transform: uppercase;
+                color: #777;
+                font-size: .9em;
+                font-family: 'Poppins';
+            }
+
+            .cart-page .container .col-md-5 .order-review table td {
+                padding: 1em 0;
+                border-bottom: 3px solid #ececec;
+                line-height: 1.05;
+                letter-spacing: .05em;
+                color: #777;
+                font-size: .9em;
+                font-family: 'Poppins';
+            }
+
+            .amount {
+                white-space: nowrap;
+                color: #111;
+                font-weight: 600;
+            }
+
+            .button {
+                position: relative;
+                display: inline-block;
+                background-color: transparent;
+                text-transform: uppercase;
+                font-size: .97em;
+                letter-spacing: .03em;
+                cursor: pointer;
+                font-weight: bolder;
+                text-align: center;
+                color: currentColor;
+                text-decoration: none;
+                border: 1px solid transparent;
+                vertical-align: middle;
+                border-radius: 0;
+                margin-top: 0;
+                margin-right: 1em;
+                text-shadow: none;
+                line-height: 2.4em;
+                min-height: 2.5em;
+                padding: 0 1.2em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+                font-family: "Poppins";
+            }
+
+            .button.alt {
+                color: #fff;
+                background-color: #446084;
+                border-color: rgba(0,0,0,0.05);
+            }
+
+            .payment p {
+                color: #777;
+                font-family: "Poppins";
+                font-size: .9em;
+                margin-bottom: .2em;
+            }
+
+            .payment label {
+                color: #222;
+                font-weight: bold;
+                font-size: .9em;
+                padding: 0 0.5em;
+                margin-bottom: 0.5em;
+            }
+
+            .cart-page .container ul li {
+                padding: 0.8em 0;
+                list-style: none;
+                margin: 0;
+                border-bottom: 1px solid #ececec;
+            }
+
+            .cart-page .container .payment_box {
+                display: none;
+            }
+            .no-item {
+                text-align: center;
+            }
+
+            .no-item p {
+                margin-bottom: 1.3em;
+                font-family: "Poppins";
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            .no-item p .button {
+                position: relative;
+                display: inline-block;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: .97em!important;
+                border-radius: 3px;
+                letter-spacing: .03em;
+                cursor: pointer;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                border: 1px solid transparent;
+                vertical-align: middle;
+                margin-top: 0;
+                text-shadow: none;
+                line-height: 2.4em;
+                min-height: 2.5em;
+                padding: 0.3em 1.5em;
+                max-width: 100%;
+                transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
+                text-rendering: optimizeLegibility;
+                box-sizing: border-box;
+            }
+
+            .no-item p .button:hover {
+                outline: none;
+                opacity: 1;
+                color: #fff;
+                box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2);
+            }
+
+            .primary {
+                background-color: #446084;
+            }
         </style>
     </head>
     <body>
         <jsp:include page="../layout/navigation.jsp" />
-        
+
         <div class="bread-crumb">
             <div class="container">
                 <div class="item">
@@ -339,35 +339,35 @@
                                 </c:if>
                                 <div class="form-group">
                                     <label>Full Name <span style="color: red">*</span></label>
-                                    
+
                                     <input name="username" placeholder="Enter your name" <c:if test="${customer != null}">value="${customer.fullName}"</c:if> />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone <span style="color: red">*</span></label>
+                                        <input name="telephone" placeholder="Enter your phone" <c:if test="${customer != null && customer.phone != null}">value="${customer.phone}"</c:if> />
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <label>Address <span style="color: red">*</span></label>
+                                        <input name="address" placeholder="Enter your address"/>
+                                    </div>
+                                    <h3>ADDITIONAL INFORMATION</h3>
+                                    <div class="form-group">
+                                        <label>Order notes (optional)</label>
+                                        <textarea name="note" class="input-text " placeholder="Notes on orders, for example, time or indications for more detailed delivery locations."></textarea>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Phone <span style="color: red">*</span></label>
-                                    <input name="telephone" placeholder="Enter your phone" <c:if test="${customer != null && customer.phone != null}">value="${customer.phone}"</c:if> />
-                                </div>
-                                <div class="form-group mb-5">
-                                    <label>Address <span style="color: red">*</span></label>
-                                    <input name="address" placeholder="Enter your address"/>
-                                </div>
-                                <h3>ADDITIONAL INFORMATION</h3>
-                                <div class="form-group">
-                                    <label>Order notes (optional)</label>
-                                    <textarea name="note" class="input-text " placeholder="Notes on orders, for example, time or indications for more detailed delivery locations."></textarea>
-                                </div>
-                            </div>
-                            <!-- End div.col-md-7 -->
-                            <div class="col-md-5">
-                                <div class="order-review">
-                                    <h3>YOUR ORDER</h3>
-                                    <table class="w-100">
-                                        <thead>
-                                            <tr>
-                                                <th class="product-name">Products</th>
-                                                <th class="product-total text-right">Subtotal</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
+                                <!-- End div.col-md-7 -->
+                                <div class="col-md-5">
+                                    <div class="order-review">
+                                        <h3>YOUR ORDER</h3>
+                                        <table class="w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th class="product-name">Products</th>
+                                                    <th class="product-total text-right">Subtotal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
                                             <c:forEach var="item" items="${order.ordersDetailCollection}">
                                                 <tr class="cart-item">
                                                     <td class="product-info">
@@ -410,7 +410,12 @@
                                                 <td class="text-right">
                                                     <span class="amount">
                                                         <c:if test="${order.voucherId != null}">
-                                                            <fmt:formatNumber value="${order.total - order.voucherId.discount}" maxFractionDigits="2"/><span>$</span>
+                                                            <c:if test="${order.total - order.voucherId.discount < 0}">
+                                                                <fmt:formatNumber value="0" maxFractionDigits="2"/><span>$</span>
+                                                            </c:if>
+                                                            <c:if test="${order.total - order.voucherId.discount > 0}">
+                                                                <fmt:formatNumber value="${order.total - order.voucherId.discount}" maxFractionDigits="2"/><span>$</span>
+                                                            </c:if>
                                                         </c:if>
                                                         <c:if test="${order.voucherId == null}">
                                                             <fmt:formatNumber value="${order.total}" maxFractionDigits="2"/><span>$</span>
@@ -453,22 +458,22 @@
                 </c:if>
             </div>
         </div>
-        
-        
+
+
         <jsp:include page="../layout/footer.jsp" />
-        
-        
+
+
         <script src="${context}/vendors/jquery/jquery-3.5.0.min.js"></script>
         <script src="${context}/vendors/popper/popper.min.js"></script>
         <script src="${context}/vendors/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
         <script src="${context}/assets/js/script.js"></script>
         <script>
-            $(document).ready(function(){
-               $('input[type="radio"]').click(function(){
-                   var id = $(this).attr('id');
-                   $('.payment_box').slideUp();
-                   $('.'+id).slideDown();
-               });
+            $(document).ready(function() {
+                $('input[type="radio"]').click(function() {
+                    var id = $(this).attr('id');
+                    $('.payment_box').slideUp();
+                    $('.' + id).slideDown();
+                });
             });
         </script>
     </body>

@@ -620,7 +620,7 @@
                     <div class="list-product">
                         <c:set var="i" value="1" />
                         <c:forEach var="item" items="${listProd}">
-                            <c:if test="${item.brandId.brandId == product.brandId.brandId && item.categoryId.categoryId == product.categoryId.categoryId && i <= 8}">
+                            <c:if test="${item.brandId.brandId == product.brandId.brandId && item.categoryId.categoryId == product.categoryId.categoryId && i <= 8 && item.status == true}">
                                 <c:set var="i" value="${i=i+1}" />
                                 <div class="block-product">
                                     <c:set var="url" value="${fn:split(item.imageUrl, ';')}"/>

@@ -37,4 +37,6 @@ public interface VouchersFacadeLocal {
     boolean checkCodeUpdate(String code, int id);
 
     boolean checkCodeAndStatus(String code);
+
+    public List<Vouchers> findByDateReport(String from, String to);
 }

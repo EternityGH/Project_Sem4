@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package controller;
 
 import entity.Vouchers;
@@ -30,18 +29,19 @@ import model.VouchersFacadeLocal;
  */
 @WebServlet(name = "AdminVouchersServlet", urlPatterns = {"/Admin/Vouchers/*"})
 public class AdminVouchersServlet extends HttpServlet {
-    
+
     @EJB
     private VouchersFacadeLocal vounchersFacade;
     RequestDispatcher dispatcher;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        
+
         String action = request.getPathInfo();
-        
-        switch(action) {
+
+        switch (action) {
             case "/List":
                 getViewVouchersList(request, response);
                 break;
@@ -51,21 +51,38 @@ public class AdminVouchersServlet extends HttpServlet {
             case "/Store":
                 create(request, response);
                 break;
+            case "/Edit":
+                getViewUpdate(request, response);
+                break;
+            case "/Update":
+                update(request, response);
+                break;
             case "/Delete":
                 delete(request, response);
+                break;
+            case "/Report":
+                getViewReport(request, response);
                 break;
             default:
                 out.print("ok");
                 break;
         }
     }
-    
+    private void getViewReport(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String from = request.getParameter("from");
+        String to = request.getParameter("to");
+        List<Vouchers> list = vounchersFacade.findByDateReport(from, to);
+        request.setAttribute("listVouchers", list);
+        dispatcher = request.getRequestDispatcher("/admin/views/voucher/report.jsp");
+        dispatcher.forward(request, response);
+    }
     private void getViewCreate(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         dispatcher = request.getRequestDispatcher("/admin/views/voucher/create.jsp");
         dispatcher.forward(request, response);
     }
-    
+
     private void getViewUpdate(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -97,7 +114,7 @@ public class AdminVouchersServlet extends HttpServlet {
             String day = request.getParameter("Day");
             String month = request.getParameter("Month");
             String year = request.getParameter("Year");
-            
+
             String expDate = day + "/" + month + "/" + year;
             Date getDate = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("Vietnam/Hanoi")).getTime();
             Date expDate2 = new SimpleDateFormat("dd/MM/yyyy").parse(expDate);
@@ -126,11 +143,11 @@ public class AdminVouchersServlet extends HttpServlet {
                 error += "Expiration date is invalid";
                 check = true;
             }
-            if(check == true){
+            if (check == true) {
                 HttpSession session = request.getSession();
                 session.setAttribute("errorUpdateVou", error);
                 response.sendRedirect("Edit?id=" + id);
-            }else {
+            } else {
 //                Vouchers voucher = new Vouchers(code, disc, getDate, expDate2, status);
                 Vouchers voucher = vounchersFacade.find(id);
                 voucher.setCode(code);
@@ -138,9 +155,9 @@ public class AdminVouchersServlet extends HttpServlet {
                 voucher.setExpirationDate(expDate2);
                 voucher.setStatus(status);
                 vounchersFacade.edit(voucher);
-                request.getSession().setAttribute("NotyMessage", "Create Voucher successfully");
+                request.getSession().setAttribute("NotyMessage", "Update Voucher successfully");
                 response.sendRedirect("List");
-            } 
+            }
         } catch (Exception e) {
             e.printStackTrace();
             response.sendRedirect("Edit?id=" + id);
@@ -201,26 +218,25 @@ public class AdminVouchersServlet extends HttpServlet {
             request.getRequestDispatcher("/admin/views/voucher/create.jsp").forward(request, response);
         }
     }
-    
-    private void getViewVouchersList(HttpServletRequest request, HttpServletResponse response) 
-            throws ServletException, IOException{
-        
-        List<Vouchers> listVouchers =  vounchersFacade.findAll();
+
+    private void getViewVouchersList(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        List<Vouchers> listVouchers = vounchersFacade.findAll();
         request.setAttribute("listVouchers", listVouchers);
         dispatcher = request.getRequestDispatcher("/admin/views/voucher/list.jsp");
         dispatcher.forward(request, response);
     }
-    
-    private void delete(HttpServletRequest request, HttpServletResponse response) 
-            throws ServletException, IOException{
-     
-         int id = Integer.parseInt(request.getParameter("id"));
-         Vouchers voucher = new Vouchers(id);
-         
-         vounchersFacade.remove(voucher);
-         response.sendRedirect("List");
+
+    private void delete(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        int id = Integer.parseInt(request.getParameter("id"));
+        Vouchers voucher = new Vouchers(id);
+
+        vounchersFacade.remove(voucher);
+        response.sendRedirect("List");
     }
-    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
