@@ -323,6 +323,35 @@
             <!-- End Orders Submenu-1 -->
         </li>
         <!-- End Orders -->
+        <!-- Orders -->
+        <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item">
+            <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu-storage">
+                <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+                    <i class="icon_documents_alt"></i>
+                </span>
+                <span class="media-body align-self-center">Storage</span>
+                <span class="d-flex align-self-center u-side-nav--control-icon">
+                    <i class="hs-admin-angle-right"></i>
+                </span>
+                <span class="u-side-nav--has-sub-menu__indicator"></span>
+            </a>
+
+            <!-- Orders Submenu-1 -->
+            <ul id="subMenu-storage" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0">
+                <!-- Brands v1 -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                    <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="${context}/Storage/List">
+                        <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+                            <i class="hs-admin-list"></i>
+                        </span>
+                        <span class="media-body align-self-center">List</span>
+                    </a>
+                </li>
+                <!-- End Orders v1 -->
+            </ul>
+            <!-- End Orders Submenu-1 -->
+        </li>
+        <!-- End Orders -->
         
     </ul>
 </div>
